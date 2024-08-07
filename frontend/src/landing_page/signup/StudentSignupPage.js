@@ -1,7 +1,6 @@
 import React from 'react';
- import 'bootstrap/dist/css/bootstrap.min.css';
 
-function SignupPage() {
+function StudentSignupPage() {
    
   return (
     <div className="container mt-5">
@@ -57,4 +56,4 @@ function SignupPage() {
   );
 }
 
-export default SignupPage;
+export default StudentSignupPage;

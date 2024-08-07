@@ -15,6 +15,7 @@ import StudentSignupPage from './landing_page/signup/StudentSignupPage';
 
 import Navbar from "./landing_page/Navbar";
 import Footer from "./landing_page/Footer";
+import StudentPage from './landing_page/student/StudentPage';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -31,6 +32,9 @@ root.render(
             <Route path='/signup/student' element={<StudentSignupPage/>}/>
             <Route path='/support' element={<SupportPage/>}/>
             <Route path='/*' element={<PagenotFound/>}/>
+
+            {/* student & staff page: */}
+            <Route path='/student' element={<StudentPage/>}/>
 
         </Routes>
      <Footer/>
