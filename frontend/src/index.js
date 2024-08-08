@@ -15,7 +15,7 @@ import StudentSignupPage from './landing_page/signup/StudentSignupPage';
 
 import Navbar from "./landing_page/Navbar";
 import Footer from "./landing_page/Footer";
-import StudentPage from './landing_page/student/StudentPage';
+import StudentPage from './landing_page/StudentPage/StudentPage';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 

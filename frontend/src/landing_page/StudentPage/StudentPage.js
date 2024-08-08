@@ -1,9 +1,9 @@
 import React from 'react';
-import HeroStudent from './HeroStudent';
+import BodyStudent from './BodyStudent';
 
 function StudentPage() {
     return ( 
-        <HeroStudent/>
+        <BodyStudent/>
     );
 }
 

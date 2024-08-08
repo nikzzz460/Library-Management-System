@@ -1,6 +1,6 @@
 import React from 'react';
 
-function HeroStudent() {
+function BodyStudent() {
     return ( 
         <div className="justify-content-center p-5 text-center">
             <div className="row">
@@ -41,4 +41,4 @@ function HeroStudent() {
     );
 }
 
-export default HeroStudent;
+export default BodyStudent;

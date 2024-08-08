@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 function LoginPage() {
     const [userType, setUserType] = useState('Student');
@@ -50,7 +49,7 @@ function LoginPage() {
                             <div className="mb-3 text-start">
                                 <a href="#forgot-password" className="text-decoration-none">Forgot Password?</a>
                             </div>
-                            <button type="submit" className="btn w-100" style={{ backgroundColor: navyBlue, color: 'white' }}>LOGIN</button>
+                            <button type="submit" className="btn w-100" style={{ backgroundColor: navyBlue }}><a href="http://localhost:3000/student" style={{textDecoration: "none", color: "white"}}>LOGIN</a></button>
                         </form>
                     </div>
                 </div>
