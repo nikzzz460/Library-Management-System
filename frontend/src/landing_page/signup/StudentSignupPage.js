@@ -1,7 +1,7 @@
 import React from 'react';
  import 'bootstrap/dist/css/bootstrap.min.css';
 
-function SignupPage() {
+function StudentSignupPage() {
    
   return (
     <div className="container mt-5">
@@ -12,6 +12,10 @@ function SignupPage() {
             <div className="form-group">
               <label htmlFor="name">Name:</label>
               <input type="text" className="form-control" id="name" placeholder="  " required />
+            </div>
+            <div className="form-group">
+              <label htmlFor="name">C number:</label>
+              <input type="text" className="form-control" id="C number" placeholder="  " required />
             </div>
             <div className="form-group">
               <label htmlFor="email">Email:</label>
@@ -26,10 +30,9 @@ function SignupPage() {
               <input type="password" className="form-control" id="confirm-password" placeholder=" " required />
             </div>
             <div className="form-group">
-              <label>Add Recent Photo:</label>
+             <label htmlFor="photo">Add Recent Photo</label>
              <input type="file" className="form-control-file mt-1" id="photo" accept=".jpg, .jpeg" />
-            </div>
-            
+             </div>
             <div className="form-check mb-3">
               <input type="checkbox" className="form-check-input" id="terms" required />
               <label className="form-check-label" htmlFor="terms">
@@ -57,4 +60,4 @@ function SignupPage() {
   );
 }
 
-export default SignupPage;
+export default StudentSignupPage;
