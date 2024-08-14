@@ -11,7 +11,7 @@ import PagenotFound from './landing_page/PagenotFound';
 import StaffSignupPage from './landing_page/signup/StaffSignupPage';
 import StudentSignupPage from './landing_page/signup/StudentSignupPage';
 
-
+/*import visit from './landing_page/visit';*/
 
 import Navbar from "./landing_page/Navbar";
 import Footer from "./landing_page/Footer";
