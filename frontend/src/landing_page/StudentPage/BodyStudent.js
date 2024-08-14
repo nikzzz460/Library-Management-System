@@ -22,9 +22,9 @@ function BodyStudent() {
                         <img src="../images/LMSlogo.jpg" className="card-img-top" style={{height: "50%", width: "100%"}} alt="..."/>
                         <ul className="list-group list-group-flush">
                             <li className="list-group-item"><Link className="nav-link" to="/student/wishlist">Wishlist</Link></li>
-                            <li className="list-group-item"><Link className="nav-link" to="/student/">Issued</Link></li>
+                            <li className="list-group-item"><Link className="nav-link" to="/student/issued">Issued</Link></li>
                             <li className="list-group-item"><Link className="nav-link" to="/student/leaderboard">Leaderboard</Link></li>
-                            <li className="list-group-item"><Link className="nav-link" to="/student/">Records</Link></li>
+                            <li className="list-group-item"><Link className="nav-link" to="/student/record">Records</Link></li>
                         </ul>
                     </div>
                 </div>
