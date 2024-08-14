@@ -16,6 +16,10 @@ import StudentSignupPage from './landing_page/signup/StudentSignupPage';
 import Navbar from "./landing_page/Navbar";
 import Footer from "./landing_page/Footer";
 import StudentPage from './landing_page/StudentPage/StudentPage';
+import StudentPageWishlist from './landing_page/StudentPage/Box2/Wishlist';
+import StudentPageLeaderboard from './landing_page/StudentPage/Box2/Leaderboard';
+import StudentPageIssuedBooks from './landing_page/StudentPage/Box2/Issued';
+import StudentPageRecords from './landing_page/StudentPage/Box2/Records';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -35,6 +39,10 @@ root.render(
 
             {/* student & staff page: */}
             <Route path='/student' element={<StudentPage/>}/>
+            <Route path='/student/wishlist' element={<StudentPageWishlist/>}/>
+            <Route path='/student/leaderboard' element={<StudentPageLeaderboard/>}/>
+            <Route path='/student/issued' element={<StudentPageIssuedBooks/>}/>
+            <Route path='/student/record' element={<StudentPageRecords/>}/>
 
         </Routes>
      <Footer/>
