@@ -37,12 +37,15 @@ root.render(
             <Route path='/support' element={<SupportPage/>}/>
             <Route path='/*' element={<PagenotFound/>}/>
 
-            {/* student & staff page: */}
+            {/* student page: */}
             <Route path='/student' element={<StudentPage/>}/>
             <Route path='/student/wishlist' element={<StudentPageWishlist/>}/>
             <Route path='/student/leaderboard' element={<StudentPageLeaderboard/>}/>
             <Route path='/student/issued' element={<StudentPageIssuedBooks/>}/>
             <Route path='/student/record' element={<StudentPageRecords/>}/>
+
+            {/* staff page: */}
+
 
         </Routes>
      <Footer/>

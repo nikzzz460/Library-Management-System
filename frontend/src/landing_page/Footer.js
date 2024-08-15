@@ -30,25 +30,26 @@ function Footer() {
     };
 
     return (
-        <footer style={footerStyle}>
-            <div className="container d-flex justify-content-between align-items-center" style={containerStyle}>
-                <div className="footer-links d-flex gap-3">
-                    <a href="#" style={linkStyle}>Guidelines</a>
-                    <a href="#" style={linkStyle}>About Us</a>
-                    <a href="#" style={linkStyle}>FAQs</a>
-                    <a href="#" style={linkStyle}>Terms of Service</a>
-                    <a href="#" style={linkStyle}>Privacy Policy</a>
-                    <a href="#" style={linkStyle}>Contact</a>
-                    <a href="#" style={linkStyle}>Support</a>
-                </div>
+        // <footer style={footerStyle}>
+        //     <div className="container d-flex justify-content-between align-items-center" style={containerStyle}>
+        //         <div className="footer-links d-flex gap-3">
+        //             <a href="#" style={linkStyle}>Guidelines</a>
+        //             <a href="#" style={linkStyle}>About Us</a>
+        //             <a href="#" style={linkStyle}>FAQs</a>
+        //             <a href="#" style={linkStyle}>Terms of Service</a>
+        //             <a href="#" style={linkStyle}>Privacy Policy</a>
+        //             <a href="#" style={linkStyle}>Contact</a>
+        //             <a href="#" style={linkStyle}>Support</a>
+        //         </div>
 
-                <div className="footer-social d-flex gap-3">
-                    <a href="#" style={socialLinkStyle}><i className="fab fa-instagram"></i></a>
-                    <a href="#" style={socialLinkStyle}><i className="fab fa-facebook-f"></i></a>
-                    <a href="#" style={socialLinkStyle}><i className="fas fa-envelope"></i></a>
-                </div>
-            </div>
-        </footer>
+        //         <div className="footer-social d-flex gap-3">
+        //             <a href="#" style={socialLinkStyle}><i className="fab fa-instagram"></i></a>
+        //             <a href="#" style={socialLinkStyle}><i className="fab fa-facebook-f"></i></a>
+        //             <a href="#" style={socialLinkStyle}><i className="fas fa-envelope"></i></a>
+        //         </div>
+        //     </div>
+        // </footer>
+        <h1>Footer</h1>
     );
 }
 
