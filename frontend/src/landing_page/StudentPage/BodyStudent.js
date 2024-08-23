@@ -7,6 +7,8 @@ function BodyStudent() {
         <div className="justify-content-center p-5 text-center">
             <div className="row">
               <div className='col-1'></div>
+
+                    {/* box1 */}
                 <div className="col mb-4">
                     <div className="card shadow" style={{width: "14rem"}}>
                         <img src="../images/LMSlogo.jpg" className="card-img-top" style={{height: "50%", width: "100%"}} alt="..."/>
@@ -17,6 +19,8 @@ function BodyStudent() {
                         </ul>
                     </div>
                 </div>
+
+                    {/* box2 */}
                 <div className="col mb-4">
                     <div className="card shadow" style={{width: "14rem"}}>
                         <img src="../images/LMSlogo.jpg" className="card-img-top" style={{height: "50%", width: "100%"}} alt="..."/>
@@ -28,6 +32,8 @@ function BodyStudent() {
                         </ul>
                     </div>
                 </div>
+
+                    {/* box3 */}
                 <div className="col mb-4">
                     <div className="card shadow" style={{width: "14rem"}}>
                         <img src="../images/LMSlogo.jpg" className="card-img-top" style={{height: "50%", width: "100%"}} alt="..."/>
