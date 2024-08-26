@@ -23,3 +23,10 @@ code {
   font-size: 15px;
 }
 
+.gallery-img {
+  height: 150px; /* Fixed height to keep images uniform */
+  object-fit: cover; /* Ensures the image covers the whole area without stretching */
+  width: 100%; /* Make sure image width fills the column */
+}
+
+
