@@ -1,38 +1,66 @@
 import React from 'react';
-import { Card, ListGroup, Container, Row, Col } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-const BookList = () => {
-  const books = [
-    { name: 'Book Name: ABC', suggestions: 'Suggestions if any' },
-    { name: 'Book Name: XYZ', suggestions: 'Suggestions if any' },
-  ];
-
+function Review() {
   return (
-    <Container>
-      {books.map((book, index) => (
-        <Card key={index} className="mb-3">
-          <Row noGutters>
-            <Col md={2} className="d-flex align-items-center justify-content-center">
-              <div style={{ width: '80px', height: '100px', backgroundColor: '#ccc' }}></div>
-            </Col>
-            <Col md={10}>
-              <Card.Body>
-                <Card.Title>{book.name}</Card.Title>
-                <Card.Text>{book.suggestions}</Card.Text>
-                <ListGroup horizontal>
-                  <ListGroup.Item>★</ListGroup.Item>
-                  <ListGroup.Item>☆</ListGroup.Item>
-                  <ListGroup.Item>☆</ListGroup.Item>
-                  <ListGroup.Item>☆</ListGroup.Item>
-                  <ListGroup.Item>☆</ListGroup.Item>
-                </ListGroup>
-              </Card.Body>
-            </Col>
-          </Row>
-        </Card>
-      ))}
-    </Container>
+    <div className="container mt-5">
+      <div className="card mb-3" style={{ border: '1px solid black' }}>
+        <div className="row no-gutters">
+          <div className="col-md-2 d-flex justify-content-center align-items-center">
+            <div
+              style={{
+                width: '50px',
+                height: '50px',
+                backgroundColor: '#e9ecef',
+                border: '1px solid black',
+              }}
+            ></div>
+          </div>
+          <div className="col-md-10">
+            <div className="card-body">
+              <h5 className="card-title">
+                <b>Book Name: ABC</b>
+              </h5>
+              <p className="card-text">
+                Suggestions if any
+              </p>
+              <p className="card-text">
+                ⭐⭐⭐⭐⭐
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div className="card mb-3" style={{ border: '1px solid black' }}>
+        <div className="row no-gutters">
+          <div className="col-md-2 d-flex justify-content-center align-items-center">
+            <div
+              style={{
+                width: '50px',
+                height: '50px',
+                backgroundColor: '#e9ecef',
+                border: '1px solid black',
+              }}
+            ></div>
+          </div>
+          <div className="col-md-10">
+            <div className="card-body">
+              <h5 className="card-title">
+                <b>Book Name: ABC</b>
+              </h5>
+              <p className="card-text">
+                Suggestions if any
+              </p>
+              <p className="card-text">
+                ⭐⭐⭐⭐⭐
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   );
-};
+}
 
-export default BookList;
+export default Review;
