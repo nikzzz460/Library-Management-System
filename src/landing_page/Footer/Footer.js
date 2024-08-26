@@ -30,6 +30,7 @@ function Footer() {
     };
 
     const linkStyle = {
+
         color: '#fff',
         textDecoration: 'none',
         fontWeight: 'bold',
