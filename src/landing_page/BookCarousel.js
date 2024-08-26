@@ -2,9 +2,9 @@ import React from "react";
 
 const BookCarousel = () => {
   const books = [
-    { src: "https://via.placeholder.com/150", title: "Book 1" },
-    { src: "https://via.placeholder.com/150", title: "Book 2" },
-    { src: "https://via.placeholder.com/150", title: "Book 3" },
+    { src: "https://via.placeholder.com/150", title: "VLSI Design" },
+    { src: "https://via.placeholder.com/150", title: "Frontend Development" },
+    { src: "https://via.placeholder.com/150", title: "Introduction to JAVA" },
   ];
 
   return (
