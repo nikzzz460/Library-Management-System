@@ -3,7 +3,9 @@ import BodyStaff from './BodyStaff';
 
 function StaffPage() {
     return ( 
+        <div >
         <BodyStaff/>
+        </div>
     );
 }
 

@@ -15,11 +15,15 @@ function Footer() {
         backgroundColor: '#306b6b',
         padding: '0.5rem 0',
         width: '100%',
-        position: 'absolute',
+        position: 'relative',
         bottom: '0',
+        marginTop: 'auto',
+       
+        
     };
 
     const containerStyle = {
+        // min-Height: '100vh',
         maxWidth: '1200px',
         margin: '0 auto',
         padding: '1rem',
