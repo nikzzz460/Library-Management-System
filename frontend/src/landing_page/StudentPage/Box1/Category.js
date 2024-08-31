@@ -1,89 +1,82 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Card, Button, Container, Row, Col } from 'react-bootstrap';
 
-const CategoryCards = () => {
+function CategoryCard({ title, imageUrls, tags, bookCount }) {
   return (
-    <Container className="mt-3">
-      <Row>
-        <Col md={4}>
-          <Card className="text-center">
-            <Card.Body>
-              <Row>
-                <Col md={6}>
-                  <div className="mb-3">
-                    <div className="image-placeholder"></div>
-                    <div className="image-placeholder"></div>
-                    <div className="image-placeholder"></div>
-                    <div className="image-placeholder"></div>
-                  </div>
-                </Col>
-                <Col md={6}>
-                  <Card.Title>TECH</Card.Title>
-                  <Button variant="outline-secondary" size="sm" className="m-1">COMP</Button>
-                  <Button variant="outline-secondary" size="sm" className="m-1">ENTC</Button>
-                  <Button variant="outline-secondary" size="sm" className="m-1">IT</Button>
-                  <Button variant="outline-secondary" size="sm" className="m-1">MECH</Button>
-                  <Button variant="outline-secondary" size="sm" className="m-1">INSTRU</Button>
-                  <Button variant="outline-secondary" size="sm" className="m-1">BSH</Button>
-                  <Card.Text>100+ books</Card.Text>
-                </Col>
-              </Row>
-            </Card.Body>
-          </Card>
-        </Col>
-
-        <Col md={4}>
-          <Card className="text-center">
-            <Card.Body>
-              <Row>
-                <Col md={6}>
-                  <div className="mb-3">
-                    <div className="image-placeholder"></div>
-                    <div className="image-placeholder"></div>
-                    <div className="image-placeholder"></div>
-                    <div className="image-placeholder"></div>
-                  </div>
-                </Col>
-                <Col md={6}>
-                  <Card.Title>NON-TECH</Card.Title>
-                  <Button variant="outline-secondary" size="sm" className="m-1">FICTION</Button>
-                  <Button variant="outline-secondary" size="sm" className="m-1">NOVEL</Button>
-                  <Button variant="outline-secondary" size="sm" className="m-1">SELF-HELP</Button>
-                  <Button variant="outline-secondary" size="sm" className="m-1">MYSTERY</Button>
-                  <Button variant="outline-secondary" size="sm" className="m-1">NARRATIVE</Button>
-                  <Card.Text>120+ books</Card.Text>
-                </Col>
-              </Row>
-            </Card.Body>
-          </Card>
-        </Col>
-
-        <Col md={4}>
-          <Card className="text-center">
-            <Card.Body>
-              <Row>
-                <Col md={6}>
-                  <div className="mb-3">
-                    <div className="image-placeholder"></div>
-                    <div className="image-placeholder"></div>
-                    <div className="image-placeholder"></div>
-                    <div className="image-placeholder"></div>
-                  </div>
-                </Col>
-                <Col md={6}>
-                  <Card.Title>NEWSPAPER</Card.Title>
-                  <Button variant="outline-secondary" size="sm" className="m-1">THE HINDU</Button>
-                  <Button variant="outline-secondary" size="sm" className="m-1">HINDUSTAN TIMES</Button>
-                  <Button variant="outline-secondary" size="sm" className="m-1">TIMES OF INDIA</Button>
-                </Col>
-              </Row>
-            </Card.Body>
-          </Card>
-        </Col>
-      </Row>
-    </Container>
+    <div className="col-md-4 mb-4">
+      <div className="card h-100">
+        <div className="card-body">
+          <div className="d-flex mb-3">
+            {imageUrls.map((url, index) => (
+              <img
+                key={index}
+                src={url}
+                alt={title}
+                className="img-thumbnail"
+                style={{ width: '200px', height: '200px', objectFit: 'cover', marginRight: '5px' }}
+              />
+            ))}
+          </div>
+          <h5 className="card-title">{title}</h5>
+          <div className="mb-3">
+            {tags.map((tag, index) => (
+              <span key={index} className="badge bg-secondary me-2">
+                {tag}
+              </span>
+            ))}
+          </div>
+          <p className="card-text"><strong>{bookCount}+</strong> books</p>
+        </div>
+      </div>
+    </div>
   );
-};
+}
+
+function CategoryCards() {
+  const categories = [
+    {
+      title: 'TECH',
+      imageUrls: [
+        '../images/books2.jpeg', // Replace with actual image paths
+        
+      ],
+      tags: ['COMP', 'ENTC', 'IT', 'MECH', 'INSTRU', 'BSH'],
+      bookCount: 100,
+    },
+    {
+      title: 'NON-TECH',
+      imageUrls: [
+        '../images/books.jpeg', // Replace with actual image paths
+        
+      ],
+      tags: ['FICTION', 'NOVEL', 'SELF-HELP', 'MYSTERY', 'NARRATIVE'],
+      bookCount: 120,
+    },
+    {
+      title: 'NEWSPAPER',
+      imageUrls: [
+        '../images/newspapers.jpeg', // Replace with actual image paths
+      ],
+      tags: ['THE HINDU', 'HINDUSTAN TIMES', 'TIMES OF INDIA'],
+      bookCount: 3, // Placeholder count, adjust accordingly
+    },
+  ];
+
+  return (
+    <div className="container mt-5">
+      <div className="row">
+        {categories.map((category, index) => (
+          <CategoryCard
+            key={index}
+            title={category.title}
+            imageUrls={category.imageUrls}
+            tags={category.tags}
+            bookCount={category.bookCount}
+          />
+        ))}
+      </div>
+    </div>
+  );
+}
 
 export default CategoryCards;
