@@ -1,8 +1,23 @@
 import React from 'react';
+import ImgGallery from './ImgGallery';
+import NewArrivals from './NewArrivals';
+import Events from './UpcomingEvents';
+import Comments from './CommentsSection';
+import AboutUs from './AboutUs';
+import HomeMap from './Map';
+import WriteExperience from './WriteExperience';
 
 function HomePage() {
     return ( 
-        <h1>HomePage</h1>
+        <>
+            <ImgGallery/>
+            <NewArrivals/>
+            <Events/>
+            <Comments/>
+            <AboutUs/>
+            <HomeMap/>
+            <WriteExperience/>
+        </>
      );
 }
 

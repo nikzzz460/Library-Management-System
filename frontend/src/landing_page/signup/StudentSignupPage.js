@@ -13,6 +13,10 @@ function StudentSignupPage() {
               <input type="text" className="form-control" id="name" placeholder="  " required />
             </div>
             <div className="form-group">
+              <label htmlFor="name">C number:</label>
+              <input type="text" className="form-control" id="C number" placeholder="  " required />
+            </div>
+            <div className="form-group">
               <label htmlFor="email">Email:</label>
               <input type="email" className="form-control" id="email" placeholder=" " required />
             </div>
@@ -25,10 +29,9 @@ function StudentSignupPage() {
               <input type="password" className="form-control" id="confirm-password" placeholder=" " required />
             </div>
             <div className="form-group">
-              <label>Add Recent Photo:</label>
+             <label htmlFor="photo">Add Recent Photo</label>
              <input type="file" className="form-control-file mt-1" id="photo" accept=".jpg, .jpeg" />
-            </div>
-            
+             </div>
             <div className="form-check mb-3">
               <input type="checkbox" className="form-check-input" id="terms" required />
               <label className="form-check-label" htmlFor="terms">
