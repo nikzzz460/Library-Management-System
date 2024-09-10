@@ -20,7 +20,7 @@ function BodyStaff() {
                     <div className="card shadow" style={{width: "14rem"}}>
                         <img src="../images/LMSlogo.jpg" className="card-img-top" style={{height: "50%", width: "100%"}} alt="..."/>
                         <ul className="list-group list-group-flush">
-                            <li className="list-group-item"><Link className="nav-link" to="/staff/viewAllMembers">View All Members </Link></li>
+                            <li className="list-group-item"><Link className="nav-link" to="/staff/allMembers">View All Members </Link></li>
                             <li className="list-group-item"><Link className="nav-link" to="/staff/editMember">Edit Member Info </Link></li>
                         </ul>
                     </div>
