@@ -1,10 +1,11 @@
 import React from "react";
 
+
 const BookCarousel = () => {
   const books = [
-    { src: "https://via.placeholder.com/150", title: "VLSI Design" },
-    { src: "https://via.placeholder.com/150", title: "Frontend Development" },
-    { src: "https://via.placeholder.com/150", title: "Introduction to JAVA" },
+    { src: "./images/VLSI.jpg", title: "" },
+    { src: "./images/Frontend.jpg", title: "" },
+    { src: "./images/Java.jpg", title: "" },
   ];
 
   return (
@@ -26,7 +27,7 @@ const BookCarousel = () => {
                 src={book.src}
                 className="d-block w-100"
                 alt={book.title}
-                style={{ height: "300px", objectFit: "cover" }}
+                style={{ height: "400px", objectFit: "cover" }}
               />
               <div className="carousel-caption">
                 <h5>{book.title}</h5>
