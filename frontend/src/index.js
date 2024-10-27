@@ -11,15 +11,17 @@ import PagenotFound from './landing_page/PagenotFound';
 import StaffSignupPage from './landing_page/signup/StaffSignupPage';
 import StudentSignupPage from './landing_page/signup/StudentSignupPage';
 
-/*import visit from './landing_page/visit';*/
+
 
 import Navbar from "./landing_page/Navbar";
 import Footer from "./landing_page/Footer";
 import StudentPage from './landing_page/StudentPage/StudentPage';
-import StudentPageWishlist from './landing_page/StudentPage/Box2/Wishlist';
-import StudentPageLeaderboard from './landing_page/StudentPage/Box2/Leaderboard';
-import StudentPageIssuedBooks from './landing_page/StudentPage/Box2/Issued';
-import StudentPageRecords from './landing_page/StudentPage/Box2/Records';
+import Rates from './landing_page/StudentPage/Box1/Rates';
+import BookTable from './landing_page/StudentPage/Box1/Reservations';
+import CategoryCards from './landing_page/StudentPage/Box1/Category';
+import Review from './landing_page/StudentPage/Box1/Reviews';
+
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -37,16 +39,13 @@ root.render(
             <Route path='/support' element={<SupportPage/>}/>
             <Route path='/*' element={<PagenotFound/>}/>
 
-            {/* student page: */}
+            {/* student & staff page: */}
             <Route path='/student' element={<StudentPage/>}/>
-            <Route path='/student/wishlist' element={<StudentPageWishlist/>}/>
-            <Route path='/student/leaderboard' element={<StudentPageLeaderboard/>}/>
-            <Route path='/student/issued' element={<StudentPageIssuedBooks/>}/>
-            <Route path='/student/record' element={<StudentPageRecords/>}/>
-
-            {/* staff page: */}
-
-
+            <Route path= '/student/rates' element={<Rates/>}/>
+            <Route path= '/student/reservations' element={<BookTable/>}/>
+            <Route path= '/student/category' element={<CategoryCards/>}/>
+            <Route path= '/student/reviews' element={<Review/>}/>
+             
         </Routes>
      <Footer/>
 

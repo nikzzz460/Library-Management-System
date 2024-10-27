@@ -13,7 +13,7 @@ function StudentSignupPage() {
               <input type="text" className="form-control" id="name" placeholder="  " required />
             </div>
             <div className="form-group">
-              <label htmlFor="name">C number:</label>
+              <label htmlFor="cno">C number:</label>
               <input type="text" className="form-control" id="C number" placeholder="  " required />
             </div>
             <div className="form-group">
