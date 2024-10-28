@@ -27,4 +27,4 @@ const HomePageDetail = () => {
   );
 };
 
-export default HomePageDetail;
+export default HomePageDetail;
