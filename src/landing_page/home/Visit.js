@@ -112,4 +112,4 @@ const Visit = () => {
   );
 };
 
-export default Visit;
+export default Visit;

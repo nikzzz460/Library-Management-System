@@ -45,4 +45,4 @@ function UpcomingEvents() {
   );
 }
 
-export default UpcomingEvents;
+export default UpcomingEvents;
