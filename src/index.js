@@ -19,9 +19,12 @@ import StudentPage from './landing_page/StudentPage/StudentPage';
 import StudentPageWishlist from './landing_page/StudentPage/Box2/Wishlist';
 import StudentPageLeaderboard from './landing_page/StudentPage/Box2/Leaderboard';
 import Footer from './landing_page/Footer/Footer';
-import Visit from './landing_page/visit';
-import ProfileSetting from './landing_page/ProfileSetting';
-import ReportPage from './landing_page/ReportPage';
+
+// HomePage imports 
+import Visit from './landing_page/home/Visit';
+import ProfileSetting from './landing_page/home/ProfileSetting';
+import ReportPage from './landing_page/home/ReportPage';
+
 
 // staff imports
 
