@@ -1,62 +1,160 @@
-import React, { useState } from 'react';
 
+import React, { useState } from "react";
+import { Link } from "react-router-dom"; // Import Link from react-router-dom
 
 function LoginPage() {
-    const [userType, setUserType] = useState('Student');
+  const [userType, setUserType] = useState("Student");
 
-    const navyBlue = '#002D62';
+  const darkGray = "#6c757d";
+  const lightGray = "#d3d3d3";
 
-    return (
-        <div className="container d-flex justify-content-center align-items-start min-vh-100" style={{ paddingTop: '5vh' }}>
-            <div className="text-center">
-                <h1 className="mb-4">LOGIN</h1>
-                <div className="d-flex justify-content-center mb-3">
-                    <div className="btn-group" role="group">
-                        <button
-                            type="button"
-                            className={`btn ${userType === 'Student' ? 'btn-primary' : 'btn-light'}`}
-                            onClick={() => setUserType('Student')}
-                            style={{ backgroundColor: userType === 'Student' ? navyBlue : '' }}
-                        >
-                            Student
-                        </button>
-                        <button
-                            type="button"
-                            className={`btn ${userType === 'Staff' ? 'btn-primary' : 'btn-light'}`}
-                            onClick={() => setUserType('Staff')}
-                            style={{ backgroundColor: userType === 'Staff' ? navyBlue : '' }}
-                        >
-                            Staff
-                        </button>
-                    </div>
-                </div>
-                <div className="card mx-auto" style={{ maxWidth: '400px' }}>
-                    <div className="card-body">
-                        <form>
-                            <div className="mb-3">
-                                <label htmlFor="email" className="form-label">Email ID</label>
-                                <input type="email" className="form-control" id="email" placeholder="Email ID" />
-                            </div>
-                            <div className="mb-3">
-                                <label htmlFor="password" className="form-label">Password</label>
-                                <input type="password" className="form-control" id="password" placeholder="Password" />
-                            </div>
-                            <div className="d-flex justify-content-between mb-3">
-                                <div className="form-check">
-                                    <input type="checkbox" className="form-check-input" id="rememberMe" />
-                                    <label className="form-check-label" htmlFor="rememberMe">Remember Me</label>
-                                </div>
-                            </div>
-                            <div className="mb-3 text-start">
-                                <a href="#forgot-password" className="text-decoration-none">Forgot Password?</a>
-                            </div>
-                            <button type="submit" className="btn w-100" style={{ backgroundColor: navyBlue }}><a href="http://localhost:3000/student" style={{textDecoration: "none", color: "white"}}>LOGIN</a></button>
-                        </form>
-                    </div>
-                </div>
-            </div>
+  return (
+    <div
+      className="d-flex justify-content-center align-items-center"
+      style={{
+        minHeight: "80vh",
+        backgroundSize: "cover",
+        backgroundRepeat: "no-repeat",
+        backgroundPosition: "center",
+        paddingTop: "10vh", // Adjust padding to keep the logo in position
+        paddingBottom: "10vh", // Maintain some space at the bottom
+      }}
+    >
+      {/* Logo Section */}
+      <div
+        style={{
+          position: "absolute",
+          top: "15px",
+          left: "115px",
+          zIndex: "100",
+        }}
+      >
+        <Link to="/">
+          <img
+            src="..\images\LMSlogo.jpg" // Update the path to your logo file
+            style={{ borderRadius: "90%", width: "12%" }}
+            alt="Logo" // Adjust logo size
+          />
+        </Link>
+      </div>
+
+      <div className="text-center" style={{ width: "35%", zIndex: "2" }}>
+        <div className="d-flex justify-content-center mb-3">
+          <div className="btn-group" role="group" style={{ width: "100%" }}>
+            <button
+              type="button"
+              className={`btn ${
+                userType === "Student" ? "btn-primary" : "btn-light"
+              }`}
+              onClick={() => setUserType("Student")}
+              style={{
+                backgroundColor: userType === "Student" ? lightGray : "",
+                borderColor: darkGray,
+                width: "50%",
+              }}
+            >
+              Student
+            </button>
+            <button
+              type="button"
+              className={`btn ${
+                userType === "Staff" ? "btn-primary" : "btn-light"
+              }`}
+              onClick={() => setUserType("Staff")}
+              style={{
+                backgroundColor: userType === "Staff" ? lightGray : "",
+                borderColor: darkGray,
+                width: "50%",
+              }}
+            >
+              Staff
+            </button>
+          </div>
         </div>
-    );
+
+        <div
+          className="card mx-auto"
+          style={{
+            maxWidth: "500px",
+            backgroundColor: "rgba(255, 255, 255, 0.2)",
+            border: "none",
+          }}
+        >
+          <div className="card-body">
+            <form>
+              <div className="mb-3">
+                <label htmlFor="email" className="form-label">
+                  Email ID
+                </label>
+                <input
+                  type="email"
+                  className="form-control"
+                  style={{ color: "black" }}
+                  id="email"
+                  placeholder="Email ID"
+                />
+              </div>
+              <div className="mb-3">
+                <label htmlFor="password" className="form-label">
+                  Password
+                </label>
+                <input
+                  type="password"
+                  className="form-control"
+                  style={{ color: "black" }}
+                  id="password"
+                  placeholder="Password"
+                />
+              </div>
+              <div className="d-flex justify-content-between mb-3">
+                <div className="form-check">
+                  <input
+                    type="checkbox"
+                    className="form-check-input"
+                    id="rememberMe"
+                  />
+                  <label
+                    className="form-check-label"
+                    style={{ color: "black" }}
+                    htmlFor="rememberMe"
+                  >
+                    Remember Me
+                  </label>
+                </div>
+              </div>
+              <div className="mb-3 text-start">
+                {/* Link to Forgot Password Page */}
+                <Link
+                  to="/forgot-password"
+                  className="text-decoration-none"
+                  style={{ color: "black" }}
+                >
+                  Forgot Password?
+                </Link>
+              </div>
+              <button
+                type="submit"
+                className="btn w-100"
+                style={{
+                  backgroundColor: lightGray,
+                  borderColor: darkGray,
+                  color: "black",
+                  borderWidth: "1px",
+                }}
+              >
+                <a
+                  href="http://localhost:3000/student"
+                  style={{ textDecoration: "none", color: "black" }}
+                >
+                  LOGIN
+                </a>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 }
 
 export default LoginPage;

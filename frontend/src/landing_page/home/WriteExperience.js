@@ -20,7 +20,7 @@ function FeedbackForm() {
               <label htmlFor="message">Message</label>
               <textarea className="form-control" id="message" rows="3"></textarea>
             </div>
-            <button type="submit" className="btn btn-primary">Send</button>
+            <button type="submit" className="btn btn-primary mt-2">Send</button> {/* Added mt-3 for space */}
           </form>
         </div>
       </div>

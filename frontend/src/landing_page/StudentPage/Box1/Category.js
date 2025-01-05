@@ -1,5 +1,9 @@
+
 import React from 'react';
+import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
+
+
 
 function CategoryCard({ title, imageUrls, tags, bookCount }) {
   return (
@@ -13,50 +17,56 @@ function CategoryCard({ title, imageUrls, tags, bookCount }) {
                 src={url}
                 alt={title}
                 className="img-thumbnail"
-                style={{ width: '200px', height: '200px', objectFit: 'cover', marginRight: '5px' }}
+                style={{
+                  width: '200px',
+                  height: '200px',
+                  objectFit: 'cover',
+                  marginRight: '5px',
+                }}
               />
             ))}
           </div>
           <h5 className="card-title">{title}</h5>
           <div className="mb-3">
             {tags.map((tag, index) => (
-              <span key={index} className="badge bg-secondary me-2">
+              // Add navigation to each tag
+              <Link
+                key={index}
+                to={`/student/category/${tag.toLowerCase()}`}
+                className="badge bg-secondary me-2"
+                style={{ textDecoration: 'none', color: 'white' }}
+              >
                 {tag}
-              </span>
+              </Link>
             ))}
           </div>
-          <p className="card-text"><strong>{bookCount}+</strong> books</p>
+          <p className="card-text">
+            <strong>{bookCount}+</strong> books
+          </p>
         </div>
       </div>
     </div>
   );
 }
 
+
 function CategoryCards() {
   const categories = [
     {
       title: 'TECH',
-      imageUrls: [
-        '../images/books2.jpeg', // Replace with actual image paths
-        
-      ],
+      imageUrls: ['../images/books2.jpeg'], // Replace with actual image paths
       tags: ['COMP', 'ENTC', 'IT', 'MECH', 'INSTRU', 'BSH'],
       bookCount: 100,
     },
     {
       title: 'NON-TECH',
-      imageUrls: [
-        '../images/books.jpeg', // Replace with actual image paths
-        
-      ],
+      imageUrls: ['../images/books.jpeg'], // Replace with actual image paths
       tags: ['FICTION', 'NOVEL', 'SELF-HELP', 'MYSTERY', 'NARRATIVE'],
       bookCount: 120,
     },
     {
       title: 'NEWSPAPER',
-      imageUrls: [
-        '../images/newspapers.jpeg', // Replace with actual image paths
-      ],
+      imageUrls: ['../images/newspapers.jpeg'], // Replace with actual image paths
       tags: ['THE HINDU', 'HINDUSTAN TIMES', 'TIMES OF INDIA'],
       bookCount: 3, // Placeholder count, adjust accordingly
     },

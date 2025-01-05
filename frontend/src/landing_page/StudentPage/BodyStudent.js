@@ -8,7 +8,7 @@ function BodyStudent() {
             <div className="row">
               <div className='col-1'></div>
                 <div className="col mb-4">
-                    <div className="card shadow" style={{width: "14rem"}}>
+                    <div className="card shadow" style={{width: "18rem"}}>
                         <img src="../images/LMSlogo.jpg" className="card-img-top" style={{height: "50%", width: "100%"}} alt="..."/>
                         <ul className="list-group list-group-flush">
                             <li className="list-group-item"><Link className="nav-link" to="/student/category">Categories</Link></li>
@@ -19,7 +19,7 @@ function BodyStudent() {
                     </div>
                 </div>
                 <div className="col mb-4">
-                    <div className="card shadow" style={{width: "14rem"}}>
+                    <div className="card shadow" style={{width: "18rem"}}>
                         <img src="../images/LMSlogo.jpg" className="card-img-top" style={{height: "50%", width: "100%"}} alt="..."/>
                         <ul className="list-group list-group-flush">
                             <li className="list-group-item"><Link className="nav-link" to="/student/wishlist">Wishlist</Link></li>
@@ -30,7 +30,7 @@ function BodyStudent() {
                     </div>
                 </div>
                 <div className="col mb-4">
-                    <div className="card shadow" style={{width: "14rem"}}>
+                    <div className="card shadow" style={{width: "18rem"}}>
                         <img src="../images/LMSlogo.jpg" className="card-img-top" style={{height: "50%", width: "100%"}} alt="..."/>
                         <ul className="list-group list-group-flush">
                             <li className="list-group-item"><Link className="nav-link" to="/student/">Alerts</Link></li>
