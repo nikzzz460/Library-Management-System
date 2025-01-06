@@ -6,7 +6,7 @@ function UpcomingEvents() {
     {
       id: 1,
       image: '../images/Event1.jpg', // Replace with actual image path
-      description: 'Book tasting: A chance for students to sample different books before reading them.',
+      description: 'Book testing: A chance for students to sample different books before reading them.',
       formLink: 'https://docs.google.com/forms/d/e/1FAIpQLSfvkNfV6umYH0UDfzvJHQRPXFt6MhtxPD8nj0cINvph3RkNTQ/viewform', // Replace with actual Google Form link
     },
     {

@@ -7,7 +7,7 @@ function BodyStaff() {
             <div className="row">
                 <div className='col-1'></div>
                 <div className="col mb-4">
-                    <div className="card shadow" style={{width: "18rem"}}>
+                    <div className="card shadow" style={{width: "16rem"}}>
                         <img src="../images/LMSlogo.jpg" className="card-img-top" style={{height: "50%", width: "100%"}} alt="..."/>
                         <ul className="list-group list-group-flush">
                         <li className="list-group-item"><Link className="nav-link" to="/staff/ViewBooks">Add/Remove Books </Link></li>
@@ -17,7 +17,7 @@ function BodyStaff() {
                     </div>
                 </div>
                 <div className="col mb-4">
-                    <div className="card shadow" style={{width: "18rem"}}>
+                    <div className="card shadow" style={{width: "16rem"}}>
                         <img src="../images/LMSlogo.jpg" className="card-img-top" style={{height: "50%", width: "100%"}} alt="..."/>
                         <ul className="list-group list-group-flush">
                             <li className="list-group-item"><Link className="nav-link" to="/staff/allMembers">View All Members </Link></li>
@@ -26,7 +26,7 @@ function BodyStaff() {
                     </div>
                 </div>
                 <div className="col mb-4">
-                    <div className="card shadow" style={{width: "18rem"}}>
+                    <div className="card shadow" style={{width: "16rem"}}>
                         <img src="../images/LMSlogo.jpg" className="card-img-top" style={{height: "50%", width: "100%"}} alt="..."/>
                         <ul className="list-group list-group-flush">
                             <li className="list-group-item"><Link className="nav-link" to="/staff/issuehistory">Issue History </Link></li>
@@ -38,7 +38,7 @@ function BodyStaff() {
                     </div>
                 </div>
                 <div className="col mb-4">
-                    <div className="card shadow" style={{width: "14rem"}}>
+                    <div className="card shadow" style={{width: "16rem"}}>
                         <img src="../images/LMSlogo.jpg" className="card-img-top" style={{height: "50%", width: "100%"}} alt="..."/>
                         <ul className="list-group list-group-flush">
                              <li className="list-group-item"><Link className="nav-link" to="/staff/DueFines">View Due Fines </Link></li>

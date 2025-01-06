@@ -1,12 +1,21 @@
-
 import React, { useState } from "react";
-import { Link } from "react-router-dom"; // Import Link from react-router-dom
+import { Link, useNavigate } from "react-router-dom"; // Import Link and useNavigate from react-router-dom
 
 function LoginPage() {
   const [userType, setUserType] = useState("Student");
-
   const darkGray = "#6c757d";
   const lightGray = "#d3d3d3";
+  const navigate = useNavigate(); // Initialize useNavigate for navigation
+
+  const handleLogin = (event) => {
+    event.preventDefault(); // Prevent the default form submission
+    // Redirect based on userType
+    if (userType === "Student") {
+      navigate("/student"); // Redirect to Student page
+    } else if (userType === "Staff") {
+      navigate("/staff"); // Redirect to Staff page
+    }
+  };
 
   return (
     <div
@@ -16,8 +25,8 @@ function LoginPage() {
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center",
-        paddingTop: "10vh", // Adjust padding to keep the logo in position
-        paddingBottom: "10vh", // Maintain some space at the bottom
+        paddingTop: "10vh",
+        paddingBottom: "10vh",
       }}
     >
       {/* Logo Section */}
@@ -31,9 +40,9 @@ function LoginPage() {
       >
         <Link to="/">
           <img
-            src="..\images\LMSlogo.jpg" // Update the path to your logo file
+            src="..\images\LMSlogo.jpg"
             style={{ borderRadius: "90%", width: "12%" }}
-            alt="Logo" // Adjust logo size
+            alt="Logo"
           />
         </Link>
       </div>
@@ -81,7 +90,7 @@ function LoginPage() {
           }}
         >
           <div className="card-body">
-            <form>
+            <form onSubmit={handleLogin}>
               <div className="mb-3">
                 <label htmlFor="email" className="form-label">
                   Email ID
@@ -123,7 +132,6 @@ function LoginPage() {
                 </div>
               </div>
               <div className="mb-3 text-start">
-                {/* Link to Forgot Password Page */}
                 <Link
                   to="/forgot-password"
                   className="text-decoration-none"
@@ -142,12 +150,7 @@ function LoginPage() {
                   borderWidth: "1px",
                 }}
               >
-                <a
-                  href="http://localhost:3000/student"
-                  style={{ textDecoration: "none", color: "black" }}
-                >
-                  LOGIN
-                </a>
+                LOGIN
               </button>
             </form>
           </div>

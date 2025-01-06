@@ -36,7 +36,6 @@ function Footer() {
             <div className="container d-flex justify-content-between align-items-center" style={containerStyle}>
                 <div className="footer-links d-flex gap-3">
                     <a href="/guideline" style={linkStyle}>Guidelines</a>
-                    <a href="/about" style={linkStyle}>About Us</a>
                     <a href="/terms-of-service" style={linkStyle}>Terms of Service</a>
                     <a href="/privacy-policy" style={linkStyle}>Privacy Policy</a>
                     <a href="/contact" style={linkStyle}>Contact</a>

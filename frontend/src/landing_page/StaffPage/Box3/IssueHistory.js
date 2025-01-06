@@ -4,26 +4,7 @@ import { FaHome, FaUser, FaCog, FaQuestionCircle, FaFileAlt } from 'react-icons/
 const IssueHistory = () => {
     return (
         <div className="d-flex">
-            {/* Sidebar */}
-            <div className="bg-light" style={{ width: "60px", height: "100vh" }}>
-                <div className="d-flex flex-column align-items-center py-3">
-                    <div className="my-3">
-                        <FaHome size={24} />
-                    </div>
-                    <div className="my-3">
-                        <FaUser size={24} />
-                    </div>
-                    <div className="my-3">
-                        <FaFileAlt size={24} />
-                    </div>
-                    <div className="my-3">
-                        <FaQuestionCircle size={24} />
-                    </div>
-                    <div className="my-3">
-                        <FaCog size={24} />
-                    </div>
-                </div>
-            </div>
+            
 
             {/* Main Content */}
             <div className="flex-grow-1 p-4">

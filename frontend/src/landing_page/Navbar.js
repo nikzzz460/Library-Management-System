@@ -5,7 +5,10 @@ function Navbar() {
   const location = useLocation();
 
   // Define paths for which a different navbar is needed
-  const loggedInPages = ["/student", "/staff"];
+  const loggedInPages = ["/student", "/staff", "/staff/issuehistory", "/staff/ViewBooks","/staff/AllBooks","/staff/allMembers", "/staff/editMember", "/staff/issuetomember", "/staff/managedue", "/staff/returnbook", "/staff/DueFines", "/staff/recentTrans" 
+    , "/student/category", "/student/rates" , "/student/reviews", "/student/reservations", "/student/wishlist", "/student/issued", "/student/leaderboard", "/student/record", "/student/category/comp", "/student/category/entc", "/student/category/it" ,
+    "/student/category/mech", "/student/category/instru", "/student/category/bsh","/login/facial-recognition", 
+  ];
   const noNavbarPages = ["/login", "/signup"];
 
   // Check the current path

@@ -80,6 +80,12 @@ import ForgotPassword from './landing_page/login/ForgotPassword';
 import Notifications from './landing_page/Notifications';
 import Profile from './landing_page/Profile';
 
+
+
+//ml model 
+import FacialRecognition from "./landing_page/login/FacialRecognition.js";
+
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
@@ -119,9 +125,9 @@ root.render(
             <Route path='/student/category/mystery' element={<MYSTERY />} />
 
             {/*  newspaper routes  */}
-            <Route path='/student/category/the%20hindu' element={<THEHINDU/>} />
-            <Route path='/student/category/hindustan%20times' element={<HINDUSTANTIMES />} />
-            <Route path='/student/category/times%20of%20india' element={<TIMESOFINDIA />} />
+            <Route path='/student/category/thehindu' element={<THEHINDU/>} />
+            <Route path='/student/category/hindustantimes' element={<HINDUSTANTIMES />} />
+            <Route path='/student/category/timesofindia' element={<TIMESOFINDIA />} />
 
 
             <Route path= '/student/reviews' element={<Review/>}/>
@@ -152,6 +158,9 @@ root.render(
             <Route path='/staff/dueFines' element={<DueFines/>}/>
             <Route path='/staff/recentTrans' element={<RecentTrans/>}/>
              
+             { /* ml model  */}
+            <Route path="/login/facial-recognition" element={<FacialRecognition />} />
+
             {/* Footer routes */}
 
             <Route path="/guideline" element={<Guideline/>} />

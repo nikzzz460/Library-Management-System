@@ -24,7 +24,7 @@ const HomePageDetail = () => {
                 width: '100%',
                 height: '100%',
               }}
-              src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+              src="..\images\LibraryVideo.mp4"
               title="About Us Video"
               allowFullScreen
             ></iframe>
